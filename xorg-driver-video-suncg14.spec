@@ -1,5 +1,5 @@
 Summary:	X.org video driver for Sun CG14 video cards
-Summary(pl):	Sterownik obrazu X.org dla kart graficznych Sun CG14
+Summary(pl.UTF-8):   Sterownik obrazu X.org dla kart graficznych Sun CG14
 Name:		xorg-driver-video-suncg14
 Version:	1.1.0
 Release:	0.1
@@ -24,7 +24,7 @@ BuildRoot:	%{tmpdir}/%{name}-%{version}-root-%(id -u -n)
 %description
 X.org video driver for Sun CG14 video cards.
 
-%description -l pl
+%description -l pl.UTF-8
 Sterownik obrazu X.org dla kart graficznych Sun CG14.
 
 %prep
