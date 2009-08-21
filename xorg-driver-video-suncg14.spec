@@ -6,7 +6,7 @@ Release:	1
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-suncg14-%{version}.tar.bz2
-# Source0-md5:	9e25784e912cb2f0493b87431fd60773
+# Source0-md5:	8e4bd0a6b155cb861356e7430d667aee
 URL:		http://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.57
 BuildRequires:	automake
