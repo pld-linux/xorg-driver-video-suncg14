@@ -2,7 +2,7 @@ Summary:	X.org video driver for Sun CG14 video cards
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych Sun CG14
 Name:		xorg-driver-video-suncg14
 Version:	1.1.1
-Release:	3
+Release:	4
 License:	MIT
 Group:		X11/Applications
 Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-suncg14-%{version}.tar.bz2
