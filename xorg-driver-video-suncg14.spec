@@ -1,23 +1,26 @@
 Summary:	X.org video driver for Sun CG14 video cards
 Summary(pl.UTF-8):	Sterownik obrazu X.org dla kart graficznych Sun CG14
 Name:		xorg-driver-video-suncg14
-Version:	1.1.2
+Version:	1.1.3
 Release:	1
 License:	MIT
 Group:		X11/Applications
-Source0:	http://xorg.freedesktop.org/releases/individual/driver/xf86-video-suncg14-%{version}.tar.bz2
-# Source0-md5:	52ed31d4701d2e750acdb06e4e6653e3
-URL:		http://xorg.freedesktop.org/
+Source0:	https://xorg.freedesktop.org/releases/individual/driver/xf86-video-suncg14-%{version}.tar.xz
+# Source0-md5:	2a181531fef7d4d1e294fdd82f71d0c5
+URL:		https://xorg.freedesktop.org/
 BuildRequires:	autoconf >= 2.60
 BuildRequires:	automake
 BuildRequires:	libtool
 BuildRequires:	pkgconfig >= 1:0.19
 BuildRequires:	rpmbuild(macros) >= 1.389
+BuildRequires:	tar >= 1:1.22
 BuildRequires:	xorg-proto-fontsproto-devel
 BuildRequires:	xorg-proto-randrproto-devel
 BuildRequires:	xorg-proto-renderproto-devel
+BuildRequires:	xorg-proto-xproto-devel
 BuildRequires:	xorg-util-util-macros >= 1.8
 BuildRequires:	xorg-xserver-server-devel >= 1.0.99.901
+BuildRequires:	xz
 %{?requires_xorg_xserver_videodrv}
 Requires:	xorg-xserver-server >= 1.0.99.901
 Provides:	xorg-driver-video
@@ -58,6 +61,6 @@ rm -rf $RPM_BUILD_ROOT
 
 %files
 %defattr(644,root,root,755)
-%doc COPYING ChangeLog README
+%doc COPYING ChangeLog README.md
 %attr(755,root,root) %{_libdir}/xorg/modules/drivers/suncg14_drv.so
 %{_mandir}/man4/suncg14.4*
